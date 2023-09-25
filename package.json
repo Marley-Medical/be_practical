@@ -1,0 +1,21 @@
+{
+  "name": "be_practical",
+  "version": "1.0.0",
+  "description": "Marley Medical Backend Engineering Practical",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "https://github.com/Zambonilli",
+  "license": "ISC",
+  "dependencies": {
+    "@types/fhir": "^0.0.37",
+    "@types/node": "^20.6.3",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2"
+  }
+}
