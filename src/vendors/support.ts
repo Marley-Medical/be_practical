@@ -1,24 +1,26 @@
-import { randomUUID } from 'crypto';
+import { randomUUID } from "crypto";
+
+export interface SupportPatient {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  timeZone: string;
+}
+
+// fake implementation of our Support system's persistence
+const store = new Map<string, SupportPatient>();
 
 export class Support {
   /**
    * creates a patient in our support desk software
-   * @param {object} patient patient in our support desk software to create
-   * @param {string} patient.firstName patient first name in our support system
-   * @param {string} patient.lastName patient last name in our support system
-   * @param {email} patient.email patient email in our support system
-   * @param {phone} patient.phone patient phone in our support system
-   * @param {timeZone} patient.timeZone patient IANA time zone in our support system
+   * @param {SupportPatient} patient patient in our support desk software to create
    * @returns {string} unique id of the support desk software patient record
    */
-  async createPatient(patient: {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    timeZone: string;
-  }): Promise<string> {
-    console.log('created support patient');
-    return randomUUID();
+  async createPatient(patient: SupportPatient): Promise<string> {
+    const id = randomUUID();
+    store.set(id, patient);
+    console.log("created support patient");
+    return id;
   }
 }
