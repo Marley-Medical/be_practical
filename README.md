@@ -6,7 +6,7 @@ As part of our interview process, we want to learn a bit more about your backend
 
 In this engineering challenge you are being asked to build a relatively small nodejs method which will help us assess your:
 
-1. Technical competency with TypeScript, Async I/O, Integrations and GitHub
+1. Technical competency with TypeScript, asynchronousI/O and integrating systems.
 2. Comprehension of requirements and design specifications
 3. Technical communication skills with another engineer
 
@@ -20,7 +20,7 @@ As always, please feel free to reach out with questions at any time.
 
 One of the bets Marley Medical has made is the idea that putting consumer grade tools into clinician's hands will result in better clinical outcomes for patients. This bet has a direct affect on the complexity of our software and a lot of the challenges Marley Medical's engineers face is dealing with this integration complexity.
 
-In this problem, we want to build a backend nodejs method that creates a new patient in Marley Medical's product when a new patient intake happens in our clinic. Our patient intake process is the process of signing up a new patient and getting them ready for our clinic to care for them. One of our sales representatives works with the patient to collect all the necessary information to create the patient in Marley Medical's product. The required patient information includes their basic demographic information like name, date of birth, as well as more complex information like insurance and shipping address. Our intake process then creates a patient in our product as well as in all of the various clinical and consumer tools our clinicians use.
+In this problem, we want to build a backend nodejs method that creates a new patient in Marley Medical's product when a new patient intake happens in our clinic. Our patient intake process is the process of signing up a new patient and getting them ready for our clinic to care for them. One of our sales representatives works with a patient to collect all the necessary information to create the patient in Marley Medical's product. The required patient information includes their basic demographic information like name, date of birth, as well as more complex information like insurance and shipping address. Our intake process then creates a patient in our product which integrates with all of the various clinical and consumer tools our clinicians use to create an associated record for the same patient.
 
 ## Instructions
 
@@ -70,4 +70,4 @@ A working solution should:
 - Simulate creating a patient record in all clinical and consumer vendor systems
 - Setup our product for success down the road
 
-Mechanically, we'll run `./validate.sh` and expect an exit code of `0``. From there, we'll evaluate your solution based on how well you solved the orchestration and integration problems this challenge presents. As mentioned above, your time is valuable and some solutions would require a _lot_ of time so we'll also look at your code comments to evaluate how well you've identified big problems not addressed and why your code is doing certain things and not doing others.
+Mechanically, we'll run `./validate.sh` and expect an exit code of `0``. From there, we'll evaluate your solution based on how well you solved the orchestration and integration problems this challenge presents. As mentioned above, your time is valuable and some solutions would require a _lot_ of time, so we'll also look at your code comments to evaluate how well you've identified big problems not addressed. Lastly, we'll evaluate how well your solution solves the problem in terms of reliability and maintainability.
